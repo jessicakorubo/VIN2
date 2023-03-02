@@ -107,7 +107,8 @@ h2.logo span {
     text-decoration: none;
 }
 .headerInfo a:hover {
-    background-color: var(--dark-pink);
+    background-color: var(--dark-blue);
+    color:var(--light-pink);
 }
 .headerInfo p {
     font-size: 18px;
@@ -153,8 +154,11 @@ hr#headerRule {
 .menu a {
     font-size:28px;
     color:white;
-    font-family:'Montserrat';
+    font-family: 'BreeSerif';
     text-decoration: none;
+}
+.menu a:hover {
+    color: var(--light-pink);
 }
 .menu a span {
     color:white;
@@ -350,7 +354,7 @@ hr.horizontalRule {
     font-size: 10px;
 }
 .detail{
-    color: var(--dark-pink);
+    color: var(--baby-pink);
     border-radius: 20px;
     padding: 1rem 1rem;
     text-align: center;
@@ -406,21 +410,17 @@ footer {
 .socialLinks a {
     text-decoration: none;
 }
-/* .quickLinks {
-    justify-content: flex-end;
-    display: flex;
-    list-style-type: none;
-} */
+
 
 
 .quickLinks a {
     margin-left: 1.5rem;
     text-decoration: none;
-    color: var(--light-pink);
-    transition: color 1.5s;
+    color: var(--dark-blue);
+    transition: color 0.5s;
 }
 .quickLinks a:hover {
-    color:rgb(232, 136, 189);
+    color:var(--baby-pink);
 }
 /* END OF BOTH MOBILE AND DESKTOP VERSION */
 
@@ -495,7 +495,7 @@ footer {
         overflow-y: auto;
         width: 60%;   
         background-color: #413e3e;
-        transition: 2s ease right;
+        transition: 0.5s ease right;
         color: rgb(245, 24, 61);
     }
     .navbar ul> img {
@@ -506,7 +506,7 @@ footer {
     }
     .navbar.active {
         right:0;
-        transition: 2s ease right;
+        /* transition: 0.5s ease right; */
     } 
     .service {
         width: 20rem;
