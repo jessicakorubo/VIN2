@@ -6,77 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vin Bakes</title>
     <link rel="shortcut icon" href="Images/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="navbar">
-        <div class="close">
-            <img src="images/icons8-close-button-32.png" alt="">
+        <div class="nav1">
+            <div class="logo">
+                <img src="images/vinbakeslogo1.png" alt="">
+                <!-- <h3>Vin Bakes</h3> -->
+            </div>
+            <div class="nav2">
+                <div class="menu">
+                    <a href="#home">Home</a>
+                    <a href="#home">About</a>
+                    <a href="#home">Services</a>
+                    <a href="#home">Contact</a>
+                </div>
+            </div>
+            <div class="telephone">
+                <p>Call Us: 0938-9124-21</p>
+            </div>
         </div>
-        <div class="logo">
-            <img src="images/vinbakeslogo1.png" alt="">
-        </div>
-        <h3>V<span>I</span>N B<span>A</span>KES</h3>
-
-        <div class="menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Gallery </a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+        
     </div>
     <div class="main">
         <div class="hero"> 
-            <div class="header" data-video="images/vinbakesVideo">
+            <div class="header">
                 <!-- <div class="headerPic">
                 </div> -->
                 <div class="mobile-navbar">
-                    <!-- <img class="nav-logo" src="images/cake-icon.png" alt=""> -->
-                    <h3 class="logotitlenav">V<span>I</span>N B<span>A</span>KES</h3>
                     <div class="hamburger">
                         <img src="images/hamburger-pink.png" alt="">
                     </div>
                 </div>
-                <video class="background-video" controls autoplay muted id="home">
+                <!-- <video class="background-video" controls autoplay muted id="home">
                     <source src="images/vinbakesVideo.mp4" type="video/mp4">
                     Your browser does not support HTML video.
-                </video>
+                </video> -->
                 <div class="header-content">
-                    <h2 class="logo">V<span>I</span>N B<span>A</span>KES SERV<span>I</span>CES</h2>
-                    <hr id="headerRule">
                     <div class="headerInfo">
+                        <h2>Vin Bakes</h2>
+                        <hr>
                         <p>Vin Bakes offers one of the very best catering Services
                             in Port-Harcourt. Our services range from casual events catering to
                              glamorous event decorations. Our meals are served at affordable prices
                             and we deliver to your home. <!--We also welcome students who are willing
                             to learn catering and event management as a course. -->
                         </p>
+                        <hr>
                         <a href="https://api.whatsapp.com/send?phone=2348068571963">Contact us</a>
                     </div>
                 </div>
             </div>  
+            
         </div>
+        
+        <br><br><br><br>
         <div class="about" id="about">
             <h2 id="titles">About Us</h2>
-            <hr class="horizontalRule">
+            <hr id="titlehr">
             <div class="aboutContent">
-                <h3 id=" aboutDef catering">Catering to your appetite</h3>
-                <p class="aboutDef">Hungry? Vin bakes has got you covered. Our secret ingredient for every recipe is love.
-                    And our meals? We're sure you'll ❤️ it.
-                     We make tasty recipes that would leave you wanting more.
-                </p>
-                <h3 id="  events">Event decorations</h3>
-                <p class="aboutDef"> We also are involved in event decorations. Have a reception you want to decorate?
-                    Contact us and we'll love to come.
-                </p>
+                <div class="aboutText" data-aos="slide-right" data-aos-duration="1000">
+                    <h3 id=" aboutDef catering">Catering to your appetite</h3>
+                    <p class="aboutDef">Hungry? Vin bakes has got you covered. Our secret ingredient for every recipe is love.
+                        And our meals? We're sure you'll ❤️ it.
+                         We make tasty recipes that would leave you wanting more.
+                         We focus on snacks but we take orders for food on special food, no matter
+                         what you are ordering. 
+                    </p>
+                    <h3 id="events">Event decorations</h3>
+                    <p class="aboutDef"> We also are involved in event decorations. Have a reception you want to decorate?
+                        Our event decorations leave you happy and satisfied, making the experience unforgettable.
+                        Contact us and we'll love to help decorate your event. 
+                    </p>
+                </div>
+                <div class="aboutImage" data-aos="slide-left" data-aos-duration="2000">
+                    <img src="images/cake5-removebg-preview.png" alt="">
+                </div>
             </div>
         </div>
+        <br><br><br><br>
         <div class="services" id="services">
             <h2 id="titles">Our Services</h2>
-            <hr class="horizontalRule">
+            <hr id="titlehr">
             <div class="serviceFixed">
                 <div class="servicePics">
                     <div class="cakeDecoration service">
@@ -84,9 +97,9 @@
                             <img src="images/cake4.JPG" alt="">
                         </div>
                         <div class="serviceText">
-                            <h2>Cake Making</h2>
-                            <hr>
-                             <p>We are ready to bake and design tasty, beautiful cakes.
+                            <h3>Cake Making</h3>
+                            <h4 id="serviceName">Learn more</h4>
+                             <p class="desc" data-aos="fade-up">We bake and design yummy, beautiful cakes.
                                 Our cakes range from small cupcakes to large party or wedding cakes.
                                 Trust your cakes with VIN BAKES.
                             </p>
@@ -97,9 +110,9 @@
                             <img src="images/meatpieSnacks.jpg" alt="">
                         </div>
                         <div class="serviceText">
-                            <h2>Snacks and Beverages</h2>
-                            <hr>
-                            <p>Snacks are your favorite? Let us handle your snack orders. We make every thing
+                            <h3>Snacks and Beverages</h3>
+                            <h4 id="serviceName">Learn more</h4>
+                            <p class="desc" data-aos="fade-up">Snacks are your favorite? Let us handle your snack orders. We make every thing
                                 from small chops to big ones. Our delivery service is fast and our meals are
                                 affordable.
                             </p>
@@ -110,9 +123,9 @@
                             <img src="images/eventDecor2.jpg" alt="">
                         </div>
                         <div class="serviceText">
-                            <h2>Event decoration</h2>
-                            <hr>
-                            <p>We decorate halls, receptions, etc. We are into all kinds
+                            <h3>Event decoration</h3>
+                            <h4 id="serviceName">Learn more</h4>
+                            <p class="desc" data-aos="fade-up">We decorate halls, receptions, etc. We are into all kinds
                                 of decor - wedding recpetions, party halls, in-home
                                 decorations for events. Need assistance decorating?
                                 Let's help you.
@@ -124,9 +137,9 @@
                             <img src="images/foodPicture2.jpg" alt="">
                         </div>
                         <div class="serviceText">
-                            <h2>Food</h2>
-                            <hr>
-                            <p>We make all kinds of Nigerian dishes.
+                            <h3>Food</h3>
+                            <h4 id="serviceName">Learn more</h4>
+                            <p class="desc" data-aos="fade-up">We make all kinds of Nigerian dishes.
                                 Our dishes are made with precision and skill, making your tastebuds
                                 relish our meals. We serve you the best, because you deserve it.
                             </p>
@@ -137,9 +150,9 @@
                             <img src="images/eventTraining1.jpg" alt="">
                         </div>
                         <div class="serviceText">
-                            <h2>Event-management Training</h2>
-                            <hr>
-                            <p>Not limiting our services to what we can do for you, we are interested
+                            <h3>Event-management Training</h3>
+                            <h4 id="serviceName">Learn more</h4>
+                            <p class="desc" data-aos="fade-up">Not limiting our services to what we can do for you, we are interested
                                 in sharing our knowledge about event management skills. Our lessons are well
                                 structured and diverse, helping you attain the experience you need to soar in
                                 your career.
@@ -151,9 +164,9 @@
                             <img src="images/cateringSchoolPic.jpg" alt="">
                         </div>
                         <div class="serviceText">
-                            <h2>Catering Training</h2>
-                            <hr>
-                            <p>We welcome interested students who are ready to learn catering skills.
+                            <h3>Catering Training</h3>
+                            <h4 id="serviceName">Learn more</h4>
+                            <p class="desc" data-aos="fade-up">We welcome interested students who are ready to learn catering skills.
                                 Our syllabus stretches across a wide variety of practicals that allow
                                 our students discover the art of cooking and baking. Our values are built on
                                 determination and knowledge.
@@ -163,21 +176,36 @@
                 </div>
             </div>
         </div>
+        <br><br><br><br>
+        <div class="visuals">
+            <div class="videoTitle">
+                <h2>We make life easier and faster. <br> Watch a video!</h2><br><br>
+                <a id="videoLink" href="#">Contact Us</a> 
+            </div>
+            <div class="video" data-aos="fade-up" data-aos-duration="2000">
+                <video width="500" controls>
+                    <source src="Images/vinbakesVideo.mp4" type="video/mp4">
+                    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+                    Your browser does not support HTML video.
+                  </video>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
         <div class="gallery" id="gallery">
-            <h2 id="titles"> <span id="slide">Slide Through</span> A Sneak Peak</h2>
-            <hr class="horizontalRule">
+            <h2 id="titles"> <span id="slide">OUR </span> Gallery</h2>
+            <hr id="titlehr">
             <div class="galleryPic">
                 <div class="galleryImage">
-                    <img src="images/cake5.JPG" alt="">
+                    <img src="images/cake6.jpg" alt="">
                 </div>
                 <div class="galleryImage">
                     <img src="images/decoration3.JPG" alt="">
                 </div>
                 <div class="galleryImage">
-                    <img src="images/puff.JPG" alt="">
+                    <img src="images/garri.JPG" alt="">
                 </div>
                 <div class="galleryImage">
-                    <img src="images/meatpie.JPG" alt="">
+                    <img src="images/foodTraining.jpg" alt="">
                 </div>
                 <div class="galleryImage">
                     <img src="images/cake3.JPG" alt="">
@@ -189,7 +217,7 @@
                     <img src="images/smallchops2.JPG" alt="">
                 </div>
                 <div class="galleryImage">
-                    <img src="images/eventTraining.jpg" alt="">
+                    <img src="images/friedRice.jpg" alt="">
                 </div>
                 <div class="galleryImage">
                     <img src="images/cake1.JPG" alt="">
@@ -201,7 +229,7 @@
                     <img src="images/food1.JPG" alt="">
                 </div>
                 <div class="galleryImage">
-                    <img src="images/eventdecor1.JPG" alt="">
+                    <img src="images/cake.jpg" alt="">
                 </div>
                 <div class="galleryImage">
                     <img src="images/cake2.JPG" alt="">
@@ -210,22 +238,62 @@
                     <img src="images/puffPic.JPG" alt="">
                 </div>
                 <div class="galleryImage">
-                    <img src="images/cake7.JPG" alt="">
+                    <img src="images/bole.jpg" alt="">
                 </div>
             </div>
         </div>
-
+        <div class="footerA">
+            <div class="quickLogo">
+                <h1>Vin Bakes</h1>
+            </div>
+            <div class="quickLinks">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+        <hr id="footerRule">
         <div class="contactSection">
             <div class="contactTitle" id="contact">
-                <h1 id="titles">Contact Us</h1>
+                <h2 id="titles">Contact Us</h2>
             </div>
-            <hr class="horizontalRule">
+            <hr id="titlehr">
             <div class="contact"> 
-                <div class="book">
-                    <h1>READY. SET. ORDER.</h1>
+                <div class="contactTitle">
+                    <h4>Send Us a Message</h4>
+                    <p>You can reach uson our phone lines and make your requests and orders.
+                         We will gt back to you in a short while.<br>
+                        Fill in your details so that we can know how to reach you
+                         and give you exactly what you want.
+                    </p>
+                </div>
+                <div class="contactBody">
+                    <div class="firstname">
+                        First Name <br> <br>
+                        <input type="text" name="" id=""> <br><br>
+                    </div>
+                    <div class="lastname">
+                        Last Name <br> <br>
+                        <input type="text" name="" id=""> <br> <br><br>
+                    </div>
+                </div>
+                <div class="contactLowerBody">
+                    Email <br> <br><br>
+                    <input type="email" name="" id=""> <br><br><br>
+                    Message
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                </div>
+                <div class="buttons">
+                    <div class="emailUs">
+                        <button type="submit">
+                            Send message
+                        </button>
+                    </div>
+                    or
                     <div class="textUs">
                         <a href="https://api.whatsapp.com/send?phone=2348068571963" class="whatsappIcon">
-                            <img src="images/whatsapp.png" alt="">
+                            <div><img src="images/whatsapp.png" alt=""></div>
                         </a>
                     </div>
                 </div>
@@ -249,26 +317,6 @@
         
         <div class="end">
             <footer class="footer">
-                <div class="socialLinks">
-                    <a href="">
-                        <img src="images/icons8-twitter-30.png" alt="">
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=100081357755792">
-                        <img src="images/icons8-facebook-24.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="images/icons8-instagram-30.png" alt="">
-                    </a>
-                </div>
-                <div class="quickLinks">
-                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About us</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                     </ul>
-                </div>
                 
             </footer>
             <hr>
@@ -277,6 +325,10 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
 
@@ -285,11 +337,7 @@
 
 
 <!-- ADDING A VIDEO  -->
-<!-- <video width="400" controls>
-  <source src="mov_bbb.mp4" type="video/mp4">
-  <source src="mov_bbb.ogg" type="video/ogg">
-  Your browser does not support HTML video.
-</video>
+<!-- 
 
 <p>
 Video courtesy of 
