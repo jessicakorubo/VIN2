@@ -76,7 +76,7 @@ body {
 .hero {
     width: 100vw;
     height: 90vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/cake7.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Images/background-black-and-pink-cake.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:20% 80%;
@@ -354,7 +354,6 @@ input, textarea{
     margin-top: 3.5rem;
 }
 .emailUs {
-    cursor: pointer;
     margin-right: 2rem;
 }
 .emailUs button{
@@ -390,7 +389,8 @@ input, textarea{
     background-color: transparent;
 }
 .emailUs button:hover {
-    color: grey;
+    cursor: pointer;
+    background-color: transparent;
 }
 .contactDetails {
     padding: 2rem 0;
