@@ -1,12 +1,42 @@
+/* FONT FACES */
+@font-face {
+    font-family: 'QuickSand';
+    src: url(Fonts/QuickSand/static/Quicksand-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lobster';
+    src: url(Fonts/Lobster/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: 'Jost';
+    src: url(Fonts/Jost/static/Jost-Regular.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(Fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: 'BreeSerif';
+    src: url(Fonts/BreeSerif-Regular.ttf);
+}
+@font-face {
+    font-family: 'BadScript';
+    src: url(Fonts/BadScript-Regular.ttf);
+}
 /* For desktop version */
+
 :root {
     --dark-pink: #FF597B;
     --light-pink:  #F9B5D0;
+}
+* {
+    scroll-behavior: smooth;
 }
 body {
     background-color: black;
     color: var(--dark-pink);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .mobile-navbar{
     display: none;
@@ -45,6 +75,7 @@ body {
     column-gap: 3rem;
 }
 .menu a {
+    font-family: 'Jost';
     color:  white;
     font-size: 20px;
     text-decoration: none;
@@ -71,6 +102,9 @@ body {
     padding: 0 1rem;
     border: 1px solid white;
 }
+.telephone:hover {
+    background-color: white;
+}
 
 /* HERO / HEADER SECTION */
 .hero {
@@ -91,6 +125,10 @@ body {
     padding-top: 100px;
     font-size: xx-large;
 }
+.headerInfo h2 {
+    font-family: 'QuickSand';
+    font-size: 60px;
+}
 .headerInfo h2, .headerInfo p {
     text-align: center;
     color: white;
@@ -100,14 +138,18 @@ body {
     top: 3rem;
     left:0;
     font-size: 20px;
+    scroll-behavior: smooth;
     text-decoration: none;
     text-align: center;
     color: var(--dark-pink);
     border: 1px solid #fff;
     padding: 1rem 2.4rem;
 }
+.headerInfo p {
+    font-family: 'Ubuntu';
+}
 .headerInfo a:hover {
-    transform: scaleX(3);
+    background-color: white;
 }
 .headerInfo hr {
     border: none;
@@ -142,12 +184,11 @@ body {
     text-align: left;
     margin-top: 140px;
 }
-.aboutText h2 {
-    z-index: 1;
-    color: var(--dark-pink);
-    text-align: left;
+.aboutText h3 {
+    font-family: 'Lobster';
 }
 .aboutText p {
+    font-family: 'QuickSand';
     color: white;
 }
 .about h3 {
@@ -267,6 +308,13 @@ hr#titlehr {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
+.videoTitle h1 {
+    font-family: 'BadScript';
+    letter-spacing: 2px;
+    color: white;
+    font-size: 28px;
+
+}
 a#videoLink {
     text-decoration: none;
     padding: 1rem 2rem;
@@ -284,13 +332,21 @@ a#videoLink:hover{
     justify-content: space-between;
     padding: 0 9rem;
 }
+.quickLogo h1 {
+    font-family: 'QuickSand';
+    font-size: 40px;
+}
 .quickLinks {
-    margin-top: 2rem;
+    margin-top: 3.5rem;
 }
 .quickLinks a{
+    font-family: 'Jost';
     text-decoration: none;
     color: white;
     margin-right: 2rem;
+}
+.quickLinks a:hover {
+    color: #FF597B;
 }
 #footerRule {
     width: 80%;
@@ -315,6 +371,7 @@ a#videoLink:hover{
     text-align: center;
 }
 .contactTitle {
+    font-family: 'QuickSand';
     margin-bottom: 2rem;
 }
 .contact {
@@ -352,6 +409,9 @@ input, textarea{
 .buttons {
     display: flex;
     margin-top: 3.5rem;
+}
+.buttons span {
+    font-family: 'BreeSerif';
 }
 .emailUs {
     margin-right: 2rem;
@@ -410,6 +470,26 @@ input, textarea{
     body {
         overflow-x: hidden;
     }
+    .mobile-navbar {
+        display: block;
+        position: relative;
+        top: 5px;
+        left: 30px;
+        margin-right: none;
+    }
+    .nav1 {
+        padding: 1.3rem 1rem 0 1rem;
+        justify-content: space-evenly;
+
+    }
+    /* .headerInfo hr {
+        width: 30rem;
+        margin: auto;
+    } */
+    .hamburger img {
+        width: 30px;
+        height: 40px;
+    }
     .menu {
         display: none;
     }
@@ -418,8 +498,9 @@ input, textarea{
         flex-direction: column;
     }
     .aboutText {
+        padding: 0 2rem;
         margin-top: 28rem;
-        width: 100%;
+        width: 90%;
     }
     .aboutImage {
         width: 100%;
