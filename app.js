@@ -11,10 +11,10 @@ hamburger.addEventListener('click', ()=>{
     navbar.classList.toggle('active');
 });
 
-close.addEventListener ('click', ()=>{
-    navbar.classList.remove('active');
+// close.addEventListener ('click', ()=>{
+//     navbar.classList.remove('active');
     
-})
+// })
 // hamburger.addEventListener('click', ()=>{
 //   menu.classList.toggle('active');
 //   console.log("Clicked on Menu Button!")
@@ -60,6 +60,7 @@ desc.forEach((desc) => {
 
 titles.forEach((title) => {
   title.addEventListener("click", (e) => {
+    console.log('Gone');
     const desc = e.target.nextElementSibling;
     desc.style.display = desc.style.display === "block" ? "none" : "block";
   });
