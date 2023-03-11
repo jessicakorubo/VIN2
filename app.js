@@ -1,28 +1,38 @@
 
-// const hamburger = document.querySelector('.hamburger');
+const hamburger = document.querySelector('.hamburger');
 // // const hero = document.querySelector('.hero');
-// const navbar = document.querySelector('.navbar');
-// const close = document.querySelector('.close');
+const navbar = document.querySelector('.menu2');
+const close = document.querySelector('.close');
 // const menuLink = document.querySelectorAll(".menu a");
 // const video = document.querySelector(".background-video");
 
+hamburger.addEventListener('click', ()=>{
+    console.log("working");
+    navbar.classList.toggle('active');
+});
+
+close.addEventListener ('click', ()=>{
+    navbar.classList.remove('active');
+    
+})
 // hamburger.addEventListener('click', ()=>{
-//     navbar.classList.add('active');
+//   menu.classList.toggle('active');
+//   console.log("Clicked on Menu Button!")
 // });
 
-// close.addEventListener ('click', ()=>{
-//     navbar.classList.remove('active');
-    
-// })
-
-
 // //MAKING THE NAVBAR DISSAPEAR WHEN I CLICK ON IT
-// disactivateNav = ()=> {
-//     navbar.addEventListener('click', ()=>{ 
-//     navbar.classList.remove('active');
-// })
-// };
-// setTimeout(disactivateNav,2000);
+disactivateNav = ()=> {
+
+  if (navbar.classList.contains('active')){
+    document.addEventListener('click', ()=>{
+      navbar.classList.remove('active');
+    })
+  }
+    navbar.addEventListener('click', ()=>{ 
+    navbar.classList.remove('active');
+})
+};
+setTimeout(disactivateNav,2000);
 
 // //changing the nav background color on scroll 
 // const mobilenavbar = document.querySelector(".mobile-navbar");
