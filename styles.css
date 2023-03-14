@@ -277,6 +277,7 @@ hr#titlehr {
     color: #FF597B;
     text-align: center;
     cursor:pointer;
+    padding: 1rem 0;
 }
 .service h4:hover {
     opacity: 0.5;
