@@ -193,7 +193,8 @@ body {
     margin-top: 140px;
 }
 .aboutText h3 {
-    font-family: 'Lobster';
+    margin-top: 2rem;
+    font-family: 'Jost';
 }
 .aboutText p {
     font-family: 'QuickSand';
@@ -353,7 +354,7 @@ a#videoLink:hover{
 .quickLinks a{
     font-family: 'Jost';
     text-decoration: none;
-    color: white;
+    color: #FF597B;
     margin-right: 2rem;
 }
 .quickLinks a:hover {
