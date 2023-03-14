@@ -441,6 +441,7 @@ input, textarea{
     border: 1px solid #FF597B;
     box-shadow: 2px 5px 13px #F9B5D0;
 }
+
 .textUs img {
     width: 30px;
     height: 30px;
@@ -467,6 +468,7 @@ input, textarea{
 .emailUs button:hover {
     cursor: pointer;
     background-color: transparent;
+     color: #FF597B;
 }
 .contactDetails {
     padding: 2rem 0;
@@ -492,12 +494,12 @@ input, textarea{
         z-index: 1;
         flex-direction: column;
         width: 99vw;
-        /* height: 30vh; */
+        height: fit-content;
         position: absolute;
         bottom: 100%;
         padding: 3rem 1rem;
         /* left: 100vw; */
-        background-color: black;
+        background-color: #FF597B;
         top: -100%;
         transition: 2s ease;
     }
@@ -515,7 +517,7 @@ input, textarea{
         display: block;
         position: relative;
         top: 10px;
-        z-index: 1;
+        /* z-index: 1; */
         margin-right: none;
     }
     
@@ -623,6 +625,12 @@ input, textarea{
     }
     .telephone {
         display: none;
+    }
+    .galleryPic {
+        width: 
+    }
+    .galleryImage {
+        padding: none;
     }
 }
 
