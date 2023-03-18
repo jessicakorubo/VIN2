@@ -183,7 +183,7 @@
         <div class="visuals">
             <div class="videoTitle">
                 <h1>We make life easier and tastier, <br> with awesome recipes!</h1><br><br>
-                <a id="videoLink" href="#">Contact Us</a> 
+                <a id="videoLink" href="#contact">Contact Us</a> 
             </div>
             <div class="video" data-aos="fade-up" data-aos-duration="2000">
                 <video width="500" controls>
@@ -271,35 +271,37 @@
                          so we can reach you and render our services.
                     </p>
                 </div>
-                <div class="contactBody">
-                    <div class="firstname">
-                        First Name <br> <br>
-                        <input type="text" name="" id=""> <br><br>
+                <form action="https://formspree.io/f/xayzbrgq" method="post">
+                    <div class="contactBody">
+                        <div class="firstname">
+                            First Name <br> <br>
+                            <input type="text" name="firstname" id=""> <br><br>
+                        </div>
+                        <div class="lastname">
+                            Last Name <br> <br>
+                            <input type="text" name="lastname" id=""> <br> <br><br>
+                        </div>
                     </div>
-                    <div class="lastname">
-                        Last Name <br> <br>
-                        <input type="text" name="" id=""> <br> <br><br>
+                    <div class="contactLowerBody">
+                        Email <br> <br><br>
+                        <input type="email" name="email" id=""> <br><br><br>
+                        Message
+                        <textarea name="message" id="" cols="30" rows="5"></textarea>
                     </div>
-                </div>
-                <div class="contactLowerBody">
-                    Email <br> <br><br>
-                    <input type="email" name="" id=""> <br><br><br>
-                    Message
-                    <textarea name="" id="" cols="30" rows="5"></textarea>
-                </div>
-                <div class="buttons">
-                    <div class="emailUs">
-                        <button type="submit">
-                            Send message
-                        </button>
+                    <div class="buttons">
+                        <div class="emailUs">
+                            <button type="submit">
+                                Send message
+                            </button>
+                        </div>
+                        <span>or</span>
+                        <div class="textUs">
+                            <a href="https://api.whatsapp.com/send?phone=2348068571963" class="whatsappIcon">
+                                <div><img src="Images/whatsapp.png" alt=""></div>
+                            </a>
+                        </div>
                     </div>
-                    <span>or</span>
-                    <div class="textUs">
-                        <a href="https://api.whatsapp.com/send?phone=2348068571963" class="whatsappIcon">
-                            <div><img src="Images/whatsapp.png" alt=""></div>
-                        </a>
-                    </div>
-                </div>
+                </form>
             </div>
             <div class="contactDetails" data-aos="fade-in" data-aos-duration="2000">
                 <div class="detail phone">

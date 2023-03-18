@@ -362,7 +362,7 @@ a#videoLink:hover{
     color: #FF597B;
 }
 #footerRule {
-    width: 80%;
+    width: 100%;
     border: none;
     height: 1px;
     background-color: var(--light-pink);
@@ -390,7 +390,7 @@ a#videoLink:hover{
     margin-bottom: 2rem;
 }
 .contact {
-    width: 40%;
+    width: 60%;
     color: black;
     margin: auto;
     margin-bottom: 3rem;
@@ -559,6 +559,9 @@ input, textarea{
     .services {
         margin-top: 28rem;
     }
+    .service {
+        width: 17rem;
+    }
     .videoTitle {
         text-align: left;
     }
@@ -568,7 +571,10 @@ input, textarea{
         width:90%;
     }
     .video {
-        margin-top: 2rem;
+        margin-top: 3.5rem;
+    }
+    video {
+        width: 95%;
     }
     .footerA {
         width: 100%;
@@ -588,7 +594,7 @@ input, textarea{
         margin-right: 1.5rem;
     }
     #footerRule {
-        width: 98%;
+        width: 90%;
         border: none;
         height: 1px;
         background-color: var(--light-pink);
@@ -619,8 +625,11 @@ input, textarea{
         margin-left: 0;
     }
     .contact input[type="email"], textarea {
-        width: 20rem;
+        width: 17rem;
         margin: auto;
+    }
+    input[type="text"] {
+        width: 17rem;
     }
     .buttons {
         display: flex;
@@ -629,9 +638,6 @@ input, textarea{
     }
     .telephone {
         display: none;
-    }
-    .galleryPic {
-        width: 
     }
     .galleryImage {
         padding: none;
